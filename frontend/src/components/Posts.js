@@ -25,9 +25,7 @@ export default function Posts({ posts, userPage }) {
                 <Link to={`/post/${post._id}`}><h2>{post.title}</h2></Link>
                 {userPage && user == post.userId &&
                   <div style={{ display: 'flex', height: 35, backgroundColor: 'white', borderRadius: 10 }} >
-                    <Link to={`/post/edit/${post._id}`} style={{ backgroundColor: 'blueviolet', borderRadius: 10, color: 'white', padding: 5 }}>
-                      <BorderColorIcon />
-                    </Link>
+                    <Link to={`/post/edit/${post._id}`} style={{ backgroundColor: 'blueviolet', borderRadius: 10, color: 'white', padding: 5 }}><BorderColorIcon /></Link>
                     <button onClick={() => deleteButtonClick(post._id)} style={{ height: 35, backgroundColor: 'red', borderRadius: 5, border: 'none', marginLeft: 10 }}>
                       <DeleteSweepIcon style={{ color: 'white', padding: 5 }} />
                     </button>
@@ -39,7 +37,7 @@ export default function Posts({ posts, userPage }) {
                 <div>
                   ...
                   <Link to={`/post/${post._id}`} >
-                    {">>>>"}
+                         >>>>
                   </Link>
                 </div>
               </div>
