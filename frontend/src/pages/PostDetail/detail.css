@@ -1,0 +1,27 @@
+.container-detail{
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: justify;
+    background-color:white;
+}
+.container-detail img{
+    max-height: 300px;
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+    margin-top: 15px;
+}
+.cd-body h1,p{
+    padding-top: 10px;
+}
+.cd-body p{
+    font-size: 19px;
+}
+@media screen and (max-width:570px){
+    .container-detail img {
+        width:95%;    
+    }.container-detail h1{
+        font-size:22px;
+    }
+}
